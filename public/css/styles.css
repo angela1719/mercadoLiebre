@@ -15,8 +15,10 @@ header {
 header section {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 }
+
 
 header img{
     width: 47%;
@@ -175,11 +177,20 @@ h4 {
     div.burguer-menu i {
         display: none;
     }
+
     header nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
     }
    
+    ul {
+        font-size: 9px;
+        display: flex;
+        
+    }
 }
 
 @media (min-width: 769px) {
