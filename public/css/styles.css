@@ -69,7 +69,8 @@ div.burguer-menu i {
     
 }
 
-body header p {
+body header section p {
+    width: 100%;
     text-align: center;
 }
 
@@ -94,8 +95,9 @@ body main section article {
 
 body main section article img {
     display: flex;
-    justify-content: space-between; /*despues aqui*/
+    justify-content: space-between;
     margin: auto;
+    
 }
 
 
@@ -189,6 +191,12 @@ h4 {
     ul {
         font-size: 9px;
         display: flex;
+        
+    }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
         
     }
 }
