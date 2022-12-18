@@ -99,7 +99,64 @@ body main form {
     align-items: center;
 
 }
-/*pagina login.html☝️🔝*/
+
+ body main form input{       
+    width: 80%;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 13px;
+}
+
+body main form button {
+    width: 80%;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0044AA;
+    font-size: 13px;
+    color:#FFF;
+    margin: 10px
+}
+
+body main form button a {
+    font-size: 13px;
+    color:#FFF;
+    text-decoration-line: none;
+}
+
+body main form label.formulario{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 45px;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.radioB {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.intereses {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    align-items: center;
+    margin-left: 45px;
+    font-size: 13px;
+}
+
+.fotoU {
+    
+    font-size: 13px;
+
+}
+
+/*pagina login.html/register.html☝️🔝*/
 
 body main section {
     padding: 15px;
@@ -172,10 +229,7 @@ footer div {
     color: #1259c3;
     position: relative;
     bottom: -40px;
-    
-    
-    
-
+    transition: color, 0.5s;
 }
 
 .pcopy {
@@ -283,14 +337,38 @@ footer div {
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         flex-grow: 0.25;
-        
-        
+         
     }
     h4 {
         visibility: visible;
     }
     div.burguer-menu i {
         display: none;
+    }
+
+    footer {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .pcopy {
+        display: flex;
+        position: absolute;
+        top: 180px;
+        left: 60px;
+    }
+
+    .iconoFooter:hover {
+        color: darkgray;
+    }
+
+    .h4footer {
+        font-size: small;
+    }
+    .pfooter {
+        font-size: x-small;
     }
     
 }

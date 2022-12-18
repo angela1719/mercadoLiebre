@@ -39,41 +39,52 @@
     </header>
     <main>
         <form action="" method="get">
-        <label for="nombre">Nombre y Apellido:</label>
-        <input type="text" name="nombreYapellido" id="nombre">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Nombre y Apellido:" name="nombreYapellido" id="nombre">
+        <span class="feedback"></span>
     
-        <label for="nombreUsuario">Nombre de usuari@:</label>
-        <input type="text" name="usuario" id="nombreUsuario">
+        <label for="nombreUsuario"></label>
+        <input type="text" placeholder="Nombre de usuari@:" name="usuario" id="nombreUsuario">
+        <span class="feedback"></span>
 
-        <label for="email">Email:</label>
-        <input type="email" name="e-mail" id="email">
+        <label for="email"></label>
+        <input type="email" placeholder="Email:" name="e-mail" id="email">
+        <span class="feedback"></span>
     
-        <label for="fechaNacimiento">Fecha de nacimiento:</label>
-        <input type="date" name="cumpleaños" id="fechaNacimiento">
+        <label class="formulario" for="fechaNacimiento">Fecha de nacimiento</label>
+        <input type="date" placeholder="Fecha de nacimiento:" name="cumpleaños" id="fechaNacimiento">
+        <span class="feedback"></span>
 
-        <label for="domicilio">Domicilio:</label>
-        <input type="text" name="domicilio" id="domicilio">
+        <label for="domicilio"></label>
+        <input type="text" placeholder="Domicilio:" name="domicilio" id="domicilio">
+        <span class="feedback"></span>
 
-        <label for="perfilUsuario">¿Quieres?:</label>
-        <input type="radio" name="perfil" value="comprar">Comprar
-        <input type="radio" name="perfil" value="vender">Vender
+        <label class="formulario" for="perfilUsuario">Perfil de usuario:</label>
+        <div class="radioB">
+            <input type="radio" name="perfil" value="comprar">Comprar
+            <input type="radio" name="perfil" value="vender">Vender
+        </div>
 
 
-        <label for="categoriasDeInteres">Categorias de interés:</label>
-        <input type="checkbox" name="categorias" value="Electro">Electro
-        <input type="checkbox" name="categorias" value="Moda">Moda
-        <input type="checkbox" name="categorias" value="Hogar">Hogar
-        <input type="checkbox" name="categorias" value="Juguetería">Juguetería
-        <input type="checkbox" name="categorias" value="Vida sana">Vida sana
+        <label class="formulario" for="categoriasDeInteres">Intereses:</label>
+            <div class="intereses">
+                <input type="checkbox" name="categorias" value="Electro">Electro
+                <input type="checkbox" name="categorias" value="Moda">Moda
+                <input type="checkbox" name="categorias" value="Hogar">Hogar
+                <input type="checkbox" name="categorias" value="Juguetería">Juguetería
+                <input type="checkbox" name="categorias" value="Vida sana">Vida sana
+            </div>
 
-        <label for="foto">Foto de Usuario:</label>
-        <input type="file" name="fotoUsuario" accept=".jpg">
+        <label  class="formulario" for="foto">Foto de Usuario:</label>
+        <input class="fotoU" type="file" name="fotoUsuario" accept=".jpg">
 
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" name="contraseña" id="contraseña">
+        <label for="contraseña"></label>
+        <input type="password" placeholder="Contraseña:" name="contraseña" id="contraseña">
+        <span class="feedback"></span>
 
-        <label for="confirmarContraseña">Confirmar contraseña:</label>
-        <input type="password" name="confirmarC" id="confirmarContraseña">
+        <label for="confirmarContraseña"></label>
+        <input type="password" placeholder="Confirmar contraseña:" name="confirmarC" id="confirmarContraseña">
+        <span class="feedback"></span>
 
         <button type="submit"><a href="/">Enviar</a></button>
         <button type="reset">Borrar</button>
