@@ -32,14 +32,13 @@ header div.input {
 
     background-color: #FFF;
     font-size: 12px;
-    border: 1px solid #000;
+    border: none;
     color: darkgrey;
     box-sizing: border-box;
     width: 47%;
     height: 30px;
     overflow: auto;
-    border-radius: 4%;
-    
+    border-radius: 5px;
 }
 
 header nav {
@@ -114,10 +113,15 @@ body main form button {
     height: 23px;
     border: none;
     border-radius: 5px;
-    background-color: #0044AA;
+    background-color: #3983f1;
     font-size: 13px;
     color:#FFF;
-    margin: 10px
+    margin: 10px;
+    transition: background-color
+}
+
+body main form button:hover {
+    background-color: #0022AA;
 }
 
 body main form button a {
@@ -175,6 +179,13 @@ body main section article {
     padding: 2px;  
     background-color: #FFF;
     flex-grow: 0.25;
+    transition: all 1s;
+}
+
+ body main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+    
 }
 
 body main section article img {
@@ -208,11 +219,30 @@ body main  section article div {
     position: absolute;
     top: -14px;
     right: 10px;
+    transition: all 1s;
+}
+
+.icarrito:hover {
+    transform: rotate(-90deg)
 }
 
 h5 {
     font-size: 14px;
     line-height: 0px;
+}
+
+.letraInv {
+    color: #666666;
+    opacity: 0%;
+    transition: all 1s;
+}
+
+.letraInv:hover {
+    opacity: 100%; ;   /*solución provisional*/
+}
+
+.descuento {
+    color:#39b54a;
 
 }
 
@@ -235,18 +265,6 @@ footer div {
 .pcopy {
     text-align: left;
     font-size: 10px;
-}
-    
-
-
-.letraInv {
-    color: #666666;
-    visibility: hidden;
-}
-
-.descuento {
-    color:#39b54a;
-
 }
 
 .h4footer {
@@ -307,11 +325,6 @@ footer div {
         display: none;
     }
     
-    main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        
-        
-    }
 
     main section article img {
         display: flex;
@@ -324,7 +337,6 @@ footer div {
     }
     
     .letraInv {
-        visibility: visible;
         font-size: 12px;
     }
     .productos {
@@ -335,12 +347,8 @@ footer div {
 
 @media (min-width: 769px){
     main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         flex-grow: 0.25;
          
-    }
-    h4 {
-        visibility: visible;
     }
     div.burguer-menu i {
         display: none;
@@ -351,6 +359,7 @@ footer div {
         position: relative;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-content: center;
     }
 
     .pcopy {
