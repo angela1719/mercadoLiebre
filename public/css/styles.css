@@ -4,7 +4,14 @@ body {
 }
 
 .barraborde {
-    border: none
+    width: 90%;
+    border: none;
+    font-size: 10px;
+}
+
+.lupa {
+    width: 10%;
+    align-self: center;
 }
 
 h3 {
@@ -28,15 +35,16 @@ header img{
     width: 47%;
 }
 
-header div.input {
-
+.input {
+    display: flex;
+    position: relative;
     background-color: #FFF;
     font-size: 12px;
     border: none;
     color: darkgrey;
     box-sizing: border-box;
     width: 47%;
-    height: 30px;
+    height: 20px;
     overflow: auto;
     border-radius: 5px;
 }
@@ -100,8 +108,8 @@ body main form {
 }
 
  body main form input{       
-    width: 80%;
-    height: 23px;
+    width: 100%;
+    height: 30px;
     border: none;
     border-radius: 5px;
     margin: 20px;
@@ -109,8 +117,8 @@ body main form {
 }
 
 body main form button {
-    width: 80%;
-    height: 23px;
+    width: 100%;
+    height: 30px;
     border: none;
     border-radius: 5px;
     background-color: #3983f1;
@@ -130,11 +138,9 @@ body main form button a {
     text-decoration-line: none;
 }
 
-body main form label.formulario{
+body main form label.formulario {
     display: flex;
     align-self: flex-start;
-    margin-left: 45px;
-    margin-top: 15px;
     font-size: 13px;
     font-weight: bold;
 }
@@ -143,16 +149,36 @@ body main form label.formulario{
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 13px;
 }
-.intereses {
+div.intereses {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-self: flex-start;
+    align-items: flex-start;
+    
+} 
+
+.span {
+    display: flex;
+    flex-direction: row-reverse;
     align-items: center;
-    margin-left: 45px;
-    font-size: 13px;
+    
+    
+    
 }
+
+label.checkbox {
+    font-size: 13px;
+
+}
+
+.inputcheck {
+    width: 16px;
+    height: 16px;
+}
+
+
 
 .fotoU {
     
@@ -291,13 +317,24 @@ footer div {
         justify-content: space-around;
     }
 
+    header div.input {
+        width: 32%;
+        height: 20px;
+    }
+
     body header section p {
-        font-size: 13px;
+        font-size: 12px;
         width: 20%;
     }
 
     body header section div {
         width: 15%;
+    }
+
+    header ul li a {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
     }
 
     body header section img {
@@ -306,13 +343,10 @@ footer div {
 
     header nav {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: nowrap;
+        
     }
    
     ul {
-        font-size: 9px;
         display: flex;
         flex-grow: 0.5;
         flex-direction: row;
@@ -320,6 +354,11 @@ footer div {
         justify-content: space-evenly;
     }
 
+    li {
+        display: flex;
+        flex-grow: 0.5;
+        font-size: 9px;
+    }
 
     div.burguer-menu i {
         display: none;
@@ -346,6 +385,10 @@ footer div {
 }
 
 @media (min-width: 769px){
+    li {
+        font-size: 15px;
+    }
+
     main section article {
         flex-grow: 0.25;
          
