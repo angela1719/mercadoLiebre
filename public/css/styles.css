@@ -309,6 +309,12 @@ footer div {
     margin-top: 0%;
 }
 
+.fa-2x {
+    width: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 @media (min-width: 361px) {
     body header section {
         display: flex;
