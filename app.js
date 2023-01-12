@@ -1,4 +1,5 @@
 const express = require('express');
+const rutasHome = require('./routes/productos.js')
 const app = express();
 
 // app.use('static', express.static(__dirname + '/public'));mas recomendada la de abajo
@@ -12,17 +13,11 @@ app.listen(process.env.PORT || 3000, function() {
     console.log("Servidor corriendo");
   });
 
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/home.html')
-});
+ app.use('/',rutasHome)
 
-app.get('/register', (req, res) => {
-    res.sendFile(__dirname + '/views/register.html')
-});
 
-app.get('/login', (req, res) => {
-    res.sendFile(__dirname + '/views/login.html')
-})
+
+
 
 
   
